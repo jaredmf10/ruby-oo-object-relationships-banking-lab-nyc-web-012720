@@ -2,7 +2,7 @@ require_relative './bank_account.rb'
 
 class Transfer
   
-    attr_accessor :sender, :receiver, :status, :amount, :last_transfer
+    attr_accessor :sender, :receiver, :status, :amount
 
 
   def initialize(sender, receiver, status = "pending", amount)
@@ -40,6 +40,5 @@ class Transfer
       self.status = "reversed"
     end
   end
-
 
 end
